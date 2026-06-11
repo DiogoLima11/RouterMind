@@ -1,0 +1,57 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+.venv/
+ENV/
+
+# ===== Variáveis de ambiente / segredos =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.*
+
+# ===== Banco de dados =====
+*.sqlite3
+*.db
+*.sqlite
+
+# ===== Dados / Embeddings =====
+backend/data/raw/*
+backend/data/processed/*
+backend/data/embeddings/*
+!backend/data/raw/.gitkeep
+!backend/data/processed/.gitkeep
+!backend/data/embeddings/.gitkeep
+chroma/
+*.index
+*.faiss
+
+# ===== Testes / cobertura =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== Node / React =====
+node_modules/
+frontend/dist/
+frontend/build/
+npm-debug.log*
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== IDEs / SO =====
+.vscode/
+.idea/
+.DS_Store
+
+# ===== Modelos =====
+*.gguf
+models/
